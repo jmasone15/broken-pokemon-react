@@ -3,7 +3,7 @@ import StatsCard from "./StatsCard";
 import TypeBadge from "./TypeBadge";
 import EvoChain from "./EvoChain";
 
-export default function PokemonCard({ pokemon, setPokemon, setLoading }) {
+export default function PokemonCard({ pokemon }) {
 
     if (!pokemon.name) {
         return <></>
@@ -32,7 +32,7 @@ export default function PokemonCard({ pokemon, setPokemon, setLoading }) {
                     <p style={{ fontSize: "20px" }} className="mb-5">
                         {pokemon.description}
                     </p>
-                    <EvoChain evolution={pokemon.evolution} setPokemon={setPokemon} setLoading={setLoading} />
+                    <EvoChain evolution={pokemon.evolution} />
                 </div>
             </div>
         </div>
