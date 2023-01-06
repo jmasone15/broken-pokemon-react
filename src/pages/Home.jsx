@@ -26,7 +26,7 @@ export default function Home() {
             <div className="mx-auto w-75 p-3">
                 <div className="d-flex">
                     <h2>Random Pokemon Generator</h2>
-                    <button className="btn btn-primary btn-sm w-20 ms-auto" onClick={(e) => handleClick()}>
+                    <button className="btn btn-primary btn-sm w-20 ms-auto" onClick={() => handleClick()}>
                         Random Pokemon
                     </button>
                 </div>

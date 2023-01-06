@@ -11,5 +11,4 @@ The application is currently experiencing five issues.
  - When I click an evolution pokemon, it loads forever?
 
  ## Bonus
- - When I click on one of the Pokemon evolutions, I want that Pokemon to become the main pokemon displayed on screen.
  - Are there any optimizations you can do to the API calls?
