@@ -62,16 +62,21 @@ export default {
             while (true) {
                 if (currentVal.evolves_to.length === 0) {
                     const sprite = await this.getSpriteByName(currentVal.species.name);
+                    const value = await this.getPokeByName(currentVal.species.name);
                     data.push({
                         name: currentVal.species.name,
+                        id: value.id,
                         sprite,
                         details: {}
                     })
+                    console.log(data);
                     return data;
                 } else {
                     const sprite = await this.getSpriteByName(currentVal.species.name);
+                    const value = await this.getPokeByName(currentVal.species.name);
                     data.push({
                         name: currentVal.species.name,
+                        id: value.id,
                         sprite,
                         details: currentVal.evolves_to[0].evolution_details[0]
                     })

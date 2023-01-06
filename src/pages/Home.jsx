@@ -33,7 +33,7 @@ export default function Home() {
             </div>
             <hr />
             <br />
-            {loading ? <Loading /> : <PokemonCard pokemon={pokemon} />}
+            {loading ? <Loading /> : <PokemonCard pokemon={pokemon} setLoading={setLoading} setPokemon={setPokemon}/>}
         </>
     )
 }
